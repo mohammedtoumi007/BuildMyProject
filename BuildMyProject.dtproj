@@ -26,11 +26,12 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-C78BL8N</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX1CbIm6eW0muQQCxDLEo3AAAAAACAAAAAAAQZgAAAAEAACAAAAAFMlaraxEoaswL/kPolYF89/aN9rol1BLswG1ReXenJQAAAAAOgAAAAAIAACAAAADYDljgI8VYfnFnr/nnXNV7Hi+DSO6Wgd1z9589dnB+l5AAAADL7qpxJ4T0Oe/6ylyxWhpvPfgnjDsmReJRvBYMKv9PK4brRONPKg4IaQrt5melzjoDMqLobXAlKezZBCXpNo9CBRC7QiO1CgqNC6kj0eSrLn+d5AUWMHAUGp1iTiU2vUZ5202/Z4UDbiwRO2WyjSiOOAcAiTxKnJTITgizvNxPw7K5rfVtAmSa14k3eII6TztAAAAAN9sLjvYhjltWc2Cq9uFsVaeWfORufhyJK9PUIT5dnwIwlvuSO36tg1DkgVC6y6F020+gLCtoKheG+Y7pmgUPAA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX1CbIm6eW0muQQCxDLEo3AAAAAACAAAAAAAQZgAAAAEAACAAAAAl4f//39jlItnJ2nGCQiLoO7Jxv5nMAbGFwL2ILEf3AwAAAAAOgAAAAAIAACAAAABZMv5d2buXGJy2CNg68H3nQuVmUkG1sVghoGO5d2t5ZZAAAADJhW+T+16iGgDvIpBe7+Un6JSe3jHfe+0Dd4Ekn+ai+5v3QKIOWxZQxamtcZpwaNCirIydbWRTErWj+42/VjsAkhcW0Cb4eW30Ai2Jg+c/nYR2OEgfmLDq2YQVaiowJCnMnyF4/DrPWpvoRfbWPBJDoCFfHqY252xE6Lqhui9+BeAZ5nsmGHdkMs0i7w7EVNxAAAAAk2LY3etYqKAVdfAVeqgfO/Lg4FoVQiOJ94nMRfRWg/SLnx2pBliKbvf3PhkHga4D1s2QdhgO8idsTkhiTJaMGg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="EL_SI_SA.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Master_STG.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
@@ -42,10 +43,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">7</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{9AA7D9FF-B423-463A-852C-3343F35ABD0F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{B816E208-E496-488C-81EF-2FB66E312E34}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -350,6 +351,23 @@
                 </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="Master_STG.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{BBE2B664-1251-4A30-8A8A-BC74A202409D}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{EF1C9BC8-4F78-4449-A8DC-37E38D508944}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
           </SSIS:PackageInfo>
         </SSIS:DeploymentInfo>
       </SSIS:Project>
@@ -373,7 +391,13 @@
         <LinkedAzureSSISIR />
         <LinkedAzureStorage />
         <RemoteExecutionFolder />
-        <ParameterConfigurationValues />
+        <ParameterConfigurationValues>
+          <ConfigurationSetting>
+            <Id>LastModifiedTime</Id>
+            <Name>LastModifiedTime</Name>
+            <Value xsi:type="xsd:dateTime">2024-02-03T17:17:11.9922303Z</Value>
+          </ConfigurationSetting>
+        </ParameterConfigurationValues>
       </Options>
     </Configuration>
   </Configurations>
